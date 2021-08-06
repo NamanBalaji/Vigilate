@@ -97,5 +97,3 @@ Usage of ./vigilate:
    -pusherSecure
         pusher server uses SSL (true or false)
 ~~~~
-
-# Vigilate
