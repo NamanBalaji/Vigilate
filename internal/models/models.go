@@ -78,5 +78,5 @@ type HostService struct {
 	LastCheck      time.Time
 	CreatedAt      time.Time
 	UpdatedAt      time.Time
-	Services       Services
+	Service        Services
 }
