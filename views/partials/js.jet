@@ -20,6 +20,10 @@
         warningAlert(data.message);
     })
 
+    publicChannel.bind("host-service-status-changed", function(data) {
+        successAlert(data.message);
+    })
+
     // things we want to look for
     //  - service goes down
     //  - service comes up
@@ -27,7 +31,6 @@
     //  - scheduled changed
     //  - monitoring is turned off
     //  - next-run-event changes
-
 
     let attention = Prompt();
 
