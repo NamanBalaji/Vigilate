@@ -148,6 +148,10 @@ func setupApp() (*string, error) {
 	app.Scheduler = scheduler
 	go handlers.Repo.StartMonitoring()
 
+	if app.PreferenceMap["monitoring_live"] == "1" {
+		app.Scheduler.Start()
+	}
+
 	helpers.NewHelpers(&app)
 
 	return insecurePort, err
